@@ -188,17 +188,16 @@ bindsym $mod+r mode "resize"
 #	status_command polybar
 #}
 
-
 exec_always --no-startup-id killall -q polybar
 exec_always --no-startup-id ~/.config/polybar/launch_polybar.sh
 exec_always --no-startup-id picom
 exec_always --no-startup-id unclutter -idle 0.5 & disown
 exec_always --no-startup-id hsetroot -solid "#1d2021"
 
-exec_always --no-startup-id bash -c "sleep 2 && redshift -x"
-exec_always --no-startup-id bash -c "sleep 2 && redshift -O 3700"
+# Set display temp
+exec_always --no-startup-id redshift -P -O 3700
 
-# Screenshots
+# Screenshot utility
 exec_always --no-startup-id flameshot
 bindsym Shift+Print exec --no-startup-id flameshot gui
 
