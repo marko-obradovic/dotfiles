@@ -126,5 +126,3 @@ eval "$(pyenv init - bash)"
 . "$HOME/.local/bin/env"
 setxkbmap us
 alias nvim="~/nvim-linux-x86_64.appimage"
-redshift -o 3700 -l 40.7128:-74.0060 >/dev/null 2>&1
-# To reset redshift, type redshift -x
