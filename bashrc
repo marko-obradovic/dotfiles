@@ -116,6 +116,7 @@ if ! shopt -oq posix; then
 fi
 
 alias brave='brave-browser & disown'
+alias brave='qutebrowser & disown'
 set -o vi
 
 export EDITOR=nvim
