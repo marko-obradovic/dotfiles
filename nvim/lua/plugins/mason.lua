@@ -23,7 +23,7 @@ return {
 				-- Linters
 				"flake8", -- Python linter
 				"shellcheck", -- Shell linter
-				"luacheck", -- Lua linter
+				-- "luacheck", -- Lua linter
 				-- LSP servers (if you use lspconfig)
 				"lua-language-server",
 				"bash-language-server",
