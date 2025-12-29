@@ -4,3 +4,6 @@
 ```bash
 stow --target ~/.config .
 ```
+
+# Dependencies
+- lua-check: sudo apt install lua-check

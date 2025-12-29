@@ -2,13 +2,11 @@ return {
 	"nvim-lualine/lualine.nvim",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
-		-- Load and modify the default theme
 		local custom_theme = require("lualine.themes.auto")
 
-		-- Change the default background color for all modes
 		for _, mode in pairs(custom_theme) do
 			for _, section in pairs(mode) do
-				section.bg = "#282828" -- your desired background color
+				section.bg = "#282828"
 			end
 		end
 
@@ -25,12 +23,14 @@ return {
 				ignore_focus = {},
 				always_divide_middle = true,
 				always_show_tabline = true,
-				globalstatus = false,
+
+				globalstatus = true,
+
 				refresh = {
 					statusline = 1000,
 					tabline = 1000,
 					winbar = 1000,
-					refresh_time = 16, -- ~60fps
+					refresh_time = 16,
 					events = {
 						"WinEnter",
 						"BufEnter",
@@ -42,34 +42,50 @@ return {
 						"CursorMoved",
 						"CursorMovedI",
 						"ModeChanged",
+						"RecordingEnter",
+						"RecordingLeave",
 					},
 				},
 			},
+
 			sections = {
 				lualine_a = {
 					{
 						"mode",
 						color = function()
 							local mode_colors = {
-								n = { fg = "#ebdbb2", bg = "#282828", gui = "bold" }, -- NORMAL → light gray
-								i = { fg = "#b8bb26", bg = "#282828", gui = "bold" }, -- INSERT → green
-								v = { fg = "#fabd2f", bg = "#282828", gui = "bold" }, -- VISUAL → yellow
-								V = { fg = "#fabd2f", bg = "#282828", gui = "bold" }, -- VISUAL LINE → yellow
-								c = { fg = "#83a598", bg = "#282828", gui = "bold" }, -- COMMAND → blue
-								R = { fg = "#fb4934", bg = "#282828", gui = "bold" }, -- REPLACE → red
-								s = { fg = "#d3869b", bg = "#282828", gui = "bold" }, -- SELECT → magenta
-								S = { fg = "#d3869b", bg = "#282828", gui = "bold" }, -- SELECT LINE → magenta
-								t = { fg = "#fe8019", bg = "#282828", gui = "bold" }, -- TERMINAL → orange
+								n = { fg = "#ebdbb2", bg = "#282828", gui = "bold" },
+								i = { fg = "#b8bb26", bg = "#282828", gui = "bold" },
+								v = { fg = "#fabd2f", bg = "#282828", gui = "bold" },
+								V = { fg = "#fabd2f", bg = "#282828", gui = "bold" },
+								c = { fg = "#83a598", bg = "#282828", gui = "bold" },
+								R = { fg = "#fb4934", bg = "#282828", gui = "bold" },
+								s = { fg = "#d3869b", bg = "#282828", gui = "bold" },
+								S = { fg = "#d3869b", bg = "#282828", gui = "bold" },
+								t = { fg = "#fe8019", bg = "#282828", gui = "bold" },
 							}
 							local current_mode = vim.fn.mode()
 							return mode_colors[current_mode] or { fg = "#ebdbb2", bg = "#282828", gui = "bold" }
 						end,
 					},
+
+					{
+						function()
+							local reg = vim.fn.reg_recording()
+							if reg == "" then
+								return ""
+							end
+							return "REC @" .. reg
+						end,
+						color = { fg = "#fb4934", bg = "#282828", gui = "bold" },
+					},
 				},
+
 				lualine_b = { "branch", "diff", "diagnostics" },
 				lualine_c = { "filename" },
 				lualine_x = { "encoding", "fileformat", "filetype" },
 			},
+
 			inactive_sections = {
 				lualine_a = {},
 				lualine_b = {},
@@ -78,6 +94,7 @@ return {
 				lualine_y = {},
 				lualine_z = {},
 			},
+
 			tabline = {},
 			winbar = {},
 			inactive_winbar = {},
