@@ -117,6 +117,7 @@ fi
 
 alias brave='brave-browser & disown'
 alias qutebrowser='qutebrowser & disown'
+alias obsidian='obsidian & disown'
 set -o vi
 
 export EDITOR=nvim
