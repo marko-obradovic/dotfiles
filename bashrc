@@ -115,7 +115,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias nvim="~/nvim-linux-x86_64.appimage"
+alias nvim='$HOME/nvim-linux-x86_64/bin/nvim'
 alias brave='brave-browser & disown'
 alias qutebrowser='qutebrowser & disown'
 alias obsidian='obsidian & disown'
@@ -125,8 +125,6 @@ export EDITOR=nvim
 export VISUAL=nvim
 export PYENV_ROOT="$HOME/.pyenv"
 
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - bash)"
 . "$HOME/.local/bin/env"
 
 setxkbmap us
