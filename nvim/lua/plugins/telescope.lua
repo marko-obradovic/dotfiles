@@ -38,6 +38,13 @@ return {
         vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
         vim.keymap.set('n', '<leader>fc', builtin.grep_string, { desc = 'Telescope help tags' })
         vim.keymap.set('n', '<leader>fr', builtin.oldfiles, { desc = 'Fuzzy find recent files' })
+        
+		vim.keymap.set("n", "gd", builtin.lsp_definitions, { desc = "Goto Definition (Telescope)" })
+		vim.keymap.set("n", "gr", builtin.lsp_references, { desc = "Find References (Telescope)" })
+		vim.keymap.set("n", "gI", builtin.lsp_implementations, { desc = "Goto Implementations (Telescope)" })
+		vim.keymap.set("n", "gD", builtin.lsp_type_definitions, { desc = "Goto Type Definition (Telescope)" })
+		vim.keymap.set("n", "<leader>ss", builtin.lsp_document_symbols, { desc = "Document Symbols" })
+		vim.keymap.set("n", "<leader>sS", builtin.lsp_workspace_symbols, { desc = "Workspace Symbols" })
 
     end,
 }
