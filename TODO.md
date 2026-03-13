@@ -8,3 +8,4 @@
 - Fix screentear
 - Get a grain overlay
 - Try different window tiling manager?
+- Set up SSH to laptop so I can work from my pc but on my laptop
