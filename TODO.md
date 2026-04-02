@@ -14,3 +14,4 @@
   - Find something for file explorer, settings, etc - unify design across all ui components.
 - Set up SSH to laptop so I can work from my pc but on my laptop
 - Set up git - add ssh keys
+- Set up USB detection
