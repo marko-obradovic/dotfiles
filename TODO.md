@@ -1,11 +1,11 @@
 # TODO
 - Fix automatic multiple monitor detection and setup
   - Also unified way of changing font, font size, colourscheme, etc. Or at least having a manual for it so I don't need to look into it every time
-- Unify design across all interfaces (notifications, cinnamon-settings, etc)
+- Unify design across all interfaces (file explorer, notifications, cinnamon-settings, etc)
 - Create a go-to modular, reproducable and portable development environment
 - Get a stable way to put computer to sleep AND better way to enter password AND better login screeen
   - But having said that it might be also worth just migrating to Arch and customising everything
 - Fix screentear
-- Get a grain overlay
 - Try different window tiling manager?
 - Set up SSH to laptop so I can work from my pc but on my laptop
+- Set up git - add ssh keys
