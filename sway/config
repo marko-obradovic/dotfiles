@@ -21,7 +21,7 @@ set $menu wmenu-run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Downloads/wallpaperhd.png fill
+output * bg /usr/share/backgrounds/pixel-pc.png fill
 #
 # Example configuration:
 #
