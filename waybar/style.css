@@ -20,7 +20,7 @@
 /* Reset all styles */
 
 * {
-    color: @lavender;
+    color: @text;
     border: 0;
     padding: 0 0;
     font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
@@ -40,7 +40,7 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    color: @mauve;
+    color: @green;
     box-shadow: none;
     /* Remove predefined box-shadow */
     text-shadow: none;
@@ -50,7 +50,7 @@ window#waybar {
 }
 
 #workspaces button:hover * {
-    color: @mauve;
+    color: @yellow;
     background-color: @base;
 }
 
@@ -68,13 +68,13 @@ window#waybar {
 }
 
 #workspaces button.focused {
-    color: @mauve;
+    color: @yellow;
     border-radius: 20px;
     /* background-color: @flamingo; */
 }
 
 #workspaces button.focused * {
-    color: @mauve;
+    color: @yellow;
 }
 
 #mode {
@@ -83,7 +83,6 @@ window#waybar {
 
 #clock,
 #custom-swap,
-#custom-cava-internal,
 #battery,
 #cpu,
 #memory,
@@ -100,8 +99,7 @@ window#waybar {
 #custom-power,
 #custom-pacman,
 #custom-launcher,
-#custom-system,
-#mpd {
+#custom-system {
     padding: 5px 8px;
     border-style: solid;
     background-color: shade(@base, 1);
@@ -112,43 +110,6 @@ window#waybar {
 /* -----------------------------------------------------------------------------
   * Module styles
   * -------------------------------------------------------------------------- */
-#mpd {
-    border-radius: 10px;
-    color: @mauve;
-    margin-left: 5px;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-#mpd.2 {
-    border-radius: 10px 0px 0px 10px;
-    margin: 8px 0px 8px 6px;
-    padding: 4px 12px 4px 10px;
-}
-
-#mpd.3 {
-    border-radius: 0px 0px 0px 0px;
-    margin: 8px 0px 8px 0px;
-    padding: 4px;
-}
-
-#mpd.4 {
-    border-radius: 0px 10px 10px 0px;
-    margin: 8px 0px 8px 0px;
-    padding: 4px 10px 4px 14px;
-}
-
-#mpd.2,
-#mpd.3,
-#mpd.4 {
-    background-color: @base;
-    font-size: 14px;
-}
-
-#mode {
-    border-radius: 10px;
-    color: @mauve;
-    margin-right: 5px;
-}
 
 #window {
     border-radius: 10px;
@@ -161,10 +122,6 @@ window#waybar {
 window#waybar.empty #window {
     background-color:transparent;
 }
-#custom-cava-internal {
-    border-radius: 10px;
-    color: @mauve;
-}
 
 #custom-swap {
     border-radius: 10px;
@@ -175,20 +132,20 @@ window#waybar.empty #window {
 
 #clock {
     /* background-color:#a3be8c; */
-    color: @sky;
+    color: @text;
     border-radius: 10px;
     margin: 8px 10px;
 }
 
 #backlight {
-    color: @yellow;
-    /* border-bottom: 2px solid @yellow; */
+    color: @text;
+    /* border-bottom: 2px solid @text; */
     border-radius: 10px 0 0 10px;
 }
 
 #battery {
     color: @green;
-    /* border-bottom: 2px solid @sky; */
+    /* border-bottom: 2px solid @text; */
     /* border-bottom: 2px solid #d8dee9; */
     border-radius: 0 10px 10px 0;
     margin-right: 10px;
@@ -223,25 +180,25 @@ window#waybar.empty #window {
 }
 
 #custom-system {
-    color: @sky;
-    /* border-bottom: 2px solid @sky; */
+    color: @text;
+    /* border-bottom: 2px solid @text; */
 }
 
 #cpu {
-    color: @sky;
-    /* border-bottom: 2px solid @sky; */
+    color: @text;
+    /* border-bottom: 2px solid @text; */
 }
 
 #cpu #cpu-icon {
-    color: @sky;
+    color: @text;
 }
 
 #memory {
-    color: @sky;
+    color: @text;
 }
 
 #disk {
-    color: @sky;
+    color: @text;
 }
 
 #network.disabled {
@@ -250,7 +207,7 @@ window#waybar.empty #window {
 }
 
 #network {
-    color: @green;
+    color: @text;
     /* border-bottom: 2px solid @green; */
     border-radius: 10px;
     margin-right: 5px;
@@ -272,8 +229,8 @@ window#waybar.empty #window {
 }
 
 #temperature {
-    color: @teal;
-    /* border-bottom: 2px solid @teal; */
+    color: @text;
+    /* border-bottom: 2px solid @blue; */
     border-radius: 10px 0 0 10px;
 }
 
@@ -322,7 +279,7 @@ window#waybar.empty #window {
 /* } */
 
 #custom-keyboard-layout {
-    color: @peach;
+    color: @text;
     /* border-bottom: 2px solid @peach; */
     border-radius: 0 10px 10px 0;
     margin-right: 10px;
