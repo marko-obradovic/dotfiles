@@ -239,4 +239,33 @@ default_border pixel 2
 gaps outer 0
 gaps inner 11
 
+## Colours (Gruvbox)
+
+set $bg_charcoal        #282828   
+set $bg_dark            #3c3836
+set $bg_mid             #504945
+set $bg_muted           #665c54
+
+set $fg_sand            #d5c4a1
+set $fg_cream           #ebdbb2
+set $fg_ivory           #fbf1c7
+
+set $accent_red         #cc241d
+set $accent_orange      #d65d0e
+set $accent_yellow      #d79921
+set $accent_olive       #98971a
+set $accent_teal        #458588
+set $accent_purple      #b16286
+set $accent_sage        #689d6a
+set $accent_gray        #a89984
+
+## Window Colours
+
+client.focused          $accent_purple  $bg_charcoal  $fg_ivory   $fg_cream    $accent_gray
+client.focused_inactive $bg_mid         $bg_charcoal  $fg_ivory   $accent_red    $bg_mid
+client.unfocused        $bg_dark        $bg_charcoal  $fg_ivory   $accent_red    $bg_mid
+client.urgent           $fg_cream       $bg_charcoal  $accent_red $accent_olive  $bg_mid
+client.placeholder      $bg_mid         $bg_charcoal  $fg_ivory   $bg_muted       $fg_sand
+client.background       $bg_charcoal
+
 include /etc/sway/config.d/*
