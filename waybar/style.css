@@ -111,18 +111,6 @@ window#waybar {
   * Module styles
   * -------------------------------------------------------------------------- */
 
-#window {
-    border-radius: 10px;
-    color: @base;
-    margin-left: 5px;
-    margin-right: 5px;
-    background-color: @mauve;
-}
-
-window#waybar.empty #window {
-    background-color:transparent;
-}
-
 #custom-swap {
     border-radius: 10px;
     color: @base;
@@ -147,7 +135,7 @@ window#waybar.empty #window {
     color: @green;
     /* border-bottom: 2px solid @text; */
     /* border-bottom: 2px solid #d8dee9; */
-    border-radius: 0 10px 10px 0;
+    border-radius: 10px 10px 10px 10px;
     margin-right: 10px;
 }
 
@@ -209,8 +197,8 @@ window#waybar.empty #window {
 #network {
     color: @text;
     /* border-bottom: 2px solid @green; */
-    border-radius: 10px;
-    margin-right: 5px;
+    border-radius: 0 10px 10px 0px;
+    margin-right: 15px;
 }
 
 #network.disconnected {
@@ -251,16 +239,7 @@ window#waybar.empty #window {
     border-radius: 10px;
 }
 
-#custom-launcher,
 #custom-power {}
-
-#custom-launcher {
-    background-color: @mauve;
-    color: @base;
-    border-radius: 10px;
-    padding: 5px 10px;
-    margin-left: 15px;
-}
 
 #custom-power {
     color: @base;
@@ -282,7 +261,7 @@ window#waybar.empty #window {
     color: @text;
     /* border-bottom: 2px solid @peach; */
     border-radius: 0 10px 10px 0;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 
