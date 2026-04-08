@@ -10,3 +10,4 @@ stow --target ~/.config .
 - Grim (for flameshot)
 - pulseaudio
 - noto-fonts-emoji
+- nix-prompt: https://github.com/nix-tricks/nix-prompt
