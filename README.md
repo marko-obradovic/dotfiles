@@ -9,3 +9,4 @@ stow --target ~/.config .
 - lua-check: sudo apt install lua-check
 - Grim (for flameshot)
 - pulseaudio
+- noto-fonts-emoji

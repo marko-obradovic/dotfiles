@@ -52,14 +52,14 @@
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
     },
-    "format": "{:%a %d %b | %I:%M %p}", //12 hour format
-    "format-alt": "  {:%Y-%m-%d  %H:%M:%S}",
+    "format": "{:%a %d %b   |   %I:%M %p}", //12 hour format
+    "format-alt": "  {:%Y-%m-%d     %H:%M:%S}",
     "interval": 1
   },
 
   // System
   "custom/system": {
-    "format": "",
+    "format": "",
     "tooltip": false
   },
   "cpu": {
@@ -67,7 +67,7 @@
     "on-click": "ghostty -e htop"
   },
   "memory": {
-    "format": " {: >3}%",
+    "format": " {: >3}%",
     "on-click": "ghostty -e htop"
   },
   "temperature": {
