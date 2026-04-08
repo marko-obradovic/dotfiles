@@ -39,5 +39,3 @@ stow --target ~/.config .
 - git
 - github-cli
 - brave-bin
-
-
