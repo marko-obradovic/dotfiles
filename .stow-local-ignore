@@ -1,6 +1,7 @@
 bashrc
 README.md
 installs.md
-dev-container
-polybar
-i3
+dev-container/
+polybar/
+i3/
+.git/
