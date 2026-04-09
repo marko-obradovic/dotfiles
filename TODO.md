@@ -4,6 +4,7 @@
 - Create a go-to modular, reproducable and portable development environment
 - Set up SSH to laptop so I can work from my pc but on my laptop
 - Fix Luacheck
+- Make sure you can screen-share - if not, set it up
 
 - SET UP SOUND + volume icon in waybar (INTERACTIVE) + keybind to vol up and down
 - SET UP BLUETOOTH + Bluetooth icon in waybar (just indicator)

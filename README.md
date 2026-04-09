@@ -6,13 +6,13 @@ stow --target ~/.config .
 ```
 
 # My Packages
+General
 - Any nerd font
 - tmux
 - neovim
 - stow
 - flameshot
 - grim (for flameshot)
-- pulseaudio
 - noto-fonts-emoji
 - nix-prompt: https://github.com/nix-tricks/nix-prompt
 - npm (FIXES MASON NOT BEING ABLE TO INSTALL PRETTIER / BASH LANGUAGE SERVER)
@@ -35,8 +35,16 @@ stow --target ~/.config .
 - github-cli
 - brave-bin
 - docker (this is installed through pacman - it's an extra repository package so it's official.)
+
+Notifications
 - mako (notifs - to reset the config, `killall mako` first)
 - libnotify (contains notify-send which you can use to test mako notifs)
+
+Audio
+- pipewire
+- pipewire-pulse
+- pipewire-alsa
+- wireplumber
 
 FOR LAPTOP (Intel Drivers)
 - intel-gpu-tools
