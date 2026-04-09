@@ -8,3 +8,6 @@ polybar
 i3
 .git
 fastfetch
+scripts
+docs
+./systemd/user/timers.target.wants
