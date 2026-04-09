@@ -31,14 +31,19 @@ stow --target ~/.config .
 - yay
 - networkmanager
 - obsidian
-- intel-gpu-tools
-- intel-media-driver
-- libva-intel-driver
-- intel-ucode
-- vulkan-intel
 - git
 - github-cli
 - brave-bin
 - docker (this is installed through pacman - it's an extra repository package so it's official.)
 - mako (notifs - to reset the config, `killall mako` first)
 - libnotify (contains notify-send which you can use to test mako notifs)
+
+FOR LAPTOP (Intel Drivers)
+- intel-gpu-tools
+- intel-media-driver
+- libva-intel-driver
+- intel-ucode
+- vulkan-intel
+
+FOR PC (NVIDIA Drivers)
+- [TBC]

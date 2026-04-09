@@ -1,15 +1,14 @@
 # TODO
 - Fix automatic multiple monitor detection and setup
-  - Also unified way of changing font, font size, colourscheme, etc. Or at least having a manual for it so I don't need to look into it every time
+    - Also unified way of changing font, font size, colourscheme, etc. Or at least having a manual for it so I don't need to look into it every time
 - Create a go-to modular, reproducable and portable development environment
-- Get a stable way to put computer to sleep AND better way to enter password AND better login screeen
-  - But having said that it might be also worth just migrating to Arch and customising everything
-- Fix screentear
-- Use new tech stack:
-  - Notifications - Mako (customise it properly)
-  - Lock - swaylock (customise it properly)
-  - Find something for file explorer, settings, etc - unify design across all ui components.
 - Set up SSH to laptop so I can work from my pc but on my laptop
-- Set up git - add ssh keys
-- Set up USB detection
 - Fix Luacheck
+
+- SET UP SOUND + volume icon in waybar (INTERACTIVE) + keybind to vol up and down
+- SET UP BLUETOOTH + Bluetooth icon in waybar (just indicator)
+- SET UP LOCK - swaylock - create a way to lock via cli
+- SET UP USB detection
+- Fix screentear
+- Customise file explorer
+- Set up Dmenu
