@@ -13,7 +13,7 @@ for bat in $(get_batteries); do
   battery_status=$(cat "$bat/status")
   name=$(basename "$bat")
 
-  if [[ "$battery_status" == "Discharging" && $battery_capacity -le 15 ]]; then
+  if [[ "$battery_status" == "Discharging" && $battery_capacity -le 15 && $battery_capacity -gt 5 ]]; then
     notify-send --urgency normal "$name" "󱊡 Battery Low\n░ ${battery_capacity}% Remaining"
   fi
   if [[ "$battery_status" == "Discharging" && $battery_capacity -le 5 ]]; then

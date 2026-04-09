@@ -6,8 +6,9 @@
 - Fix Luacheck
 - Make sure you can screen-share - if not, set it up
 
-- SET UP SOUND + volume icon in waybar (INTERACTIVE) + keybind to vol up and down
+- SET UP volume icon in waybar (INTERACTIVE) + a way to increase/decrease on my pc
 - SET UP BLUETOOTH + Bluetooth icon in waybar (just indicator)
+- Set up screenshotting properly - flameshot gui just won't work in sway's config
 - SET UP LOCK - swaylock - create a way to lock via cli
 - SET UP USB detection
 - Fix screentear
