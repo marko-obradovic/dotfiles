@@ -1,9 +1,10 @@
 .bashrc
 .nixprompt.bash
 README.md
+TODO.md
 installs.md
-dev-container/
-polybar/
-i3/
-.git/
-fastfetch/
+dev-container
+polybar
+i3
+.git
+fastfetch
