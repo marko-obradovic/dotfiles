@@ -11,4 +11,6 @@ systemctl --user enable --now battery-alert.timer
 systemctl --user list-timers
 ```
 
+To see what's happening in the background: `journalctl --user -u battery-alert.service -f`
+
 Reference: https://ejmastnak.com/tutorials/arch/battery-alert/

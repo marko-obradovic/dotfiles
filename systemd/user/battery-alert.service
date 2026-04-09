@@ -4,7 +4,7 @@ Description=Desktop alert warning of low remaining battery
 [Service]
 Type=oneshot
 # %h is home directory
-ExecStart=%h/dotfiles/scripts/alert-battery.sh
+ExecStart=%h/dotfiles/scripts/battery-alert.sh
 
 [Install]
 WantedBy=graphical.target

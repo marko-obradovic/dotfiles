@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 get_batteries() {
   for bat in /sys/class/power_supply/*; do
@@ -13,10 +13,10 @@ for bat in $(get_batteries); do
   battery_status=$(cat "$bat/status")
   name=$(basename "$bat")
 
-  if [[ "$status" == "Discharging" && $capacity -le 15 ]]; then
-    notify-send --urgency normal '$name' '󱊡 Battery Low\n░ 15% Remaining'
+  if [[ "$battery_status" == "Discharging" && $battery_capacity -le 15 ]]; then
+    notify-send --urgency normal "$name" "󱊡 Battery Low\n░ ${battery_capacity}% Remaining"
   fi
-  if [[ "$status" == "Discharging" && $capacity -le 5 ]]; then
-    notify-send --urgency critical '$name' '󱃍 Battery Critical\n░ 5% Remaining'
+  if [[ "$battery_status" == "Discharging" && $battery_capacity -le 5 ]]; then
+    notify-send --urgency critical "$name" "󱃍 Battery Critical\n░ ${battery_capacity}% Remaining"
   fi
 done
