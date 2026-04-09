@@ -40,5 +40,5 @@ stow --target ~/.config .
 - github-cli
 - brave-bin
 - docker (this is installed through pacman - it's an extra repository package so it's official.)
-- mako (notifs)
+- mako (notifs - to reset the config, `killall mako` first)
 - libnotify (contains notify-send which you can use to test mako notifs)

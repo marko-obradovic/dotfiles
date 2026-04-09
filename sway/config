@@ -270,4 +270,16 @@ client.background       $bg_charcoal
 
 seat * hide_cursor 300
 
+# Dismiss latest notification
+bindsym $mod+Ctrl+x exec makoctl dismiss
+
+# Dismiss ALL notifications
+bindsym $mod+Ctrl+Shift+x exec makoctl dismiss --all
+
+# Restore last dismissed notification
+bindsym $mod+Ctrl+r exec makoctl restore
+
+# Open action (if notification has buttons)
+bindsym $mod+Ctrl+s exec makoctl invoke
+
 include /etc/sway/config.d/*
