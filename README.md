@@ -39,3 +39,4 @@ stow --target ~/.config .
 - git
 - github-cli
 - brave-bin
+- docker (this is installed through pacman - it's an extra repository package so it's official.)
