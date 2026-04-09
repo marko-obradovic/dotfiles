@@ -10,4 +10,3 @@ i3
 fastfetch
 scripts
 docs
-./systemd/user/timers.target.wants
