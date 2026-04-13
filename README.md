@@ -5,6 +5,14 @@
 stow --target ~/.config .
 ```
 
+# Connecting to internet
+use `nmcli` commands (comes with NetworkManager)
+
+Typical workflow:
+`nmcli device wifi list`
+`nmcli device wifi connect BSSID` (if no password)
+`nmcli device wifi connect BSSID --ask` (if password)
+
 # My Packages
 General
 - Any nerd font
@@ -29,7 +37,7 @@ General
 - sway
 - alacritty
 - yay
-- networkmanager
+- NetworkManager
 - obsidian
 - git
 - github-cli
