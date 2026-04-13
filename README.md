@@ -48,6 +48,7 @@ Docker
 *These are installed through pacman - it's an extra repository package so it's official.*
 - docker 
 - docker-compose
+- docker-buildx
 
 Notifications
 - mako (notifs - to reset the config, `killall mako` first)
