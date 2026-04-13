@@ -17,7 +17,6 @@ Typical workflow:
 General
 - Any nerd font
 - tmux
-- neovim
 - stow
 - flameshot
 - grim (for flameshot)
@@ -44,8 +43,24 @@ General
 - brave-bin
 - tree
 
+Neovim
+*Note: If something doesn't install properly through Mason, just do `:Mason` in Nvim and try to install it yourself by pressing `i` on it.*
+- neovim
+- luarocks (luacheck dependency)
+- argparse (luacheck dependency)
+    - INSTALL THIS VIA `sudo luarocks install argparse` - https://luarocks.org/modules/argparse/argparse
+    - If argparse can't be installed because the current lua version doesn't work:
+        - To check what versions work with it, run `sudo luarocks -- install argparse --check-lua-versions`
+        - Install the version of lua you need - e.g. `sudo pacman -S lua54` - https://wiki.archlinux.org/title/Lua
+        - Install argparse for that version- e.g. `sudo luarocks --lua-version=5.4 install argparse`
+    - To set that version as default:
+        - `ls /usr/bin/lua*` (check versions you have)
+        - `luarocks config --local lua_version 5.4`
+        OR
+        - `export LUA_VERSION=5.4` in your .bashrc
+
 Docker
-*These are installed through pacman - it's an extra repository package so it's official.*
+*Note: These are installed through pacman - it's an extra repository package so it's official.*
 - docker 
 - docker-compose
 - docker-buildx
