@@ -42,8 +42,12 @@ General
 - git
 - github-cli
 - brave-bin
-- docker (this is installed through pacman - it's an extra repository package so it's official.)
 - tree
+
+Docker
+*These are installed through pacman - it's an extra repository package so it's official.*
+- docker 
+- docker-compose
 
 Notifications
 - mako (notifs - to reset the config, `killall mako` first)
