@@ -1,0 +1,62 @@
+font=JetBrainsMono Nerd Font Propo
+font-size=40
+scaling=fill
+
+indicator-x-position=965
+indicator-y-position=540
+indicator-radius=200
+indicator-thickness=30
+
+# --- Base Colors (Gruvbox Dark) ---
+# bg0:      #282828
+# bg1:      #3c3836
+# fg:       #ebdbb2
+# yellow:   #fabd2f
+# orange:   #fe8019
+# red:      #fb4934
+# green:    #b8bb26
+# aqua:     #8ec07c
+# purple:   #d3869b
+
+# --- Inside ---
+inside-color=282828
+inside-clear-color=282828
+inside-caps-lock-color=282828
+inside-ver-color=282828
+inside-wrong-color=282828
+
+# --- Ring ---
+ring-color=3c3836
+ring-clear-color=fe8019
+ring-caps-lock-color=d3869b
+ring-ver-color=b8bb26
+ring-wrong-color=fb4934
+
+# --- Text ---
+text-color=ebdbb2
+text-clear-color=fe8019
+text-caps-lock-color=d3869b
+text-ver-color=ebdbb2
+text-wrong-color=fb4934
+
+# --- Line ---
+line-color=3c3836
+line-clear-color=fe8019
+line-caps-lock-color=d3869b
+line-ver-color=b8bb26
+line-wrong-color=fb4934
+
+# --- Key / Highlights ---
+key-hl-color=fabd2f
+bs-hl-color=fe8019
+caps-lock-key-hl-color=d3869b
+caps-lock-bs-hl-color=fe8019
+
+# --- Layout ---
+color=282828
+layout-bg-color=282828
+layout-border-color=282828
+layout-text-color=ebdbb2
+
+# --- Misc ---
+separator-color=00000000

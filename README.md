@@ -42,6 +42,18 @@ General
 - github-cli
 - brave-bin
 - tree
+- fuzzel
+- swaylock
+
+Bluetooth:
+https://wiki.archlinux.org/title/Bluetooth
+- bluez
+- bluez-utils
+bluetoothctl comes with this - that's what you use to connect to devices
+Make sure to start and enable bluetooth.service:
+`systemctl --user enable --now bluetooth.service`
+You can also use bluetui (need to install it via pacman)
+
 
 Neovim
 *Note: If something doesn't install properly through Mason, just do `:Mason` in Nvim and try to install it yourself by pressing `i` on it.*

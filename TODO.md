@@ -9,9 +9,8 @@
 - SET UP volume icon in waybar (INTERACTIVE) + a way to increase/decrease on my pc
 - SET UP BLUETOOTH + Bluetooth icon in waybar (just indicator)
 - Set up screenshotting properly - flameshot gui just won't work in sway's config
-- SET UP LOCKSCREEN - swaylock - create a way to lock via cli
 - SET UP USB detection
-- Fix screentear
+- Fix screentear - get compositor?
 - Customise file explorer
-- Set up Dmenu
 - Set up trackpad support
+- Set up terminal scratchpads

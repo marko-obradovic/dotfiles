@@ -16,7 +16,7 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty
 # Your preferred application launcher
-set $menu wmenu-run
+set $menu fuzzel
 
 ### Output configuration
 #
@@ -281,5 +281,7 @@ bindsym $mod+Ctrl+r exec makoctl restore
 
 # Open action (if notification has buttons)
 bindsym $mod+Ctrl+s exec makoctl invoke
+
+bindsym $mod+Ctrl+l exec swaylock
 
 include /etc/sway/config.d/*

@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+bemenu-run \
+  --fn "JetBrainsMono Nerd Font 11" \
+  --nb "#282828" \
+  --nf "#ebdbb2" \
+  --hb "#7c6f64" \
+  --hf "#ebdbb2" \
+  --sb "#3c3836" \
+  --sf "#ebdbb2" \
+  --tb "#282828" \
+  --tf "#fbf1c7" \
+  --fb "#282828" \
+  --ff "#b8bb26" \
+  --ab "#282828" \
+  --af "#fabd2f" \
+  --bdr "#504945" \
+  --border 2 \
+  --center \
+  --border-radius 0 \
+  --width-factor 0.2 \
+  --prompt " " \
+  --list 4 \
+  --binding vim \
+  --vim-esc-exits \
+  --wrap \
+  --ignorecase \
+  --no-cursor \
+  --single-instance \
+  --fixed-height \
+  --scrollbar none
