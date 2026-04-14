@@ -50,8 +50,9 @@ https://wiki.archlinux.org/title/Bluetooth
 - bluez
 - bluez-utils
 bluetoothctl comes with this - that's what you use to connect to devices
-Make sure to start and enable bluetooth.service:
-`systemctl --user enable --now bluetooth.service`
+Make sure to enable and start bluetooth.service:
+`sudo systemctl enable bluetooth`
+`systemctl enable --now bluetooth.service`
 You can also use bluetui (need to install it via pacman)
 
 
