@@ -53,8 +53,7 @@
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
     },
-    "format": "{:%a %d %b   |   %I:%M %p}", //12 hour format
-    "format-alt": "  {:%Y-%m-%d     %H:%M:%S}",
+    "format": "   {:%Y-%m-%d     |       %H:%M:%S}", //12 hour format
     "interval": 1
   },
 

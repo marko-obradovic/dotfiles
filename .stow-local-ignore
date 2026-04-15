@@ -1,5 +1,6 @@
 .bashrc
 .nixprompt.bash
+.gitignore
 README.md
 TODO.md
 installs.md

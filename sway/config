@@ -284,4 +284,22 @@ bindsym $mod+Ctrl+s exec makoctl invoke
 
 bindsym $mod+Ctrl+l exec swaylock
 
+bindsym $mod+c exec yad --calendar \
+  --title="calendar-popup" \
+  --gtkrc="/home/kovski/.config/gtk-3.0/yad-calendar.css" \
+  --borders=0 \
+  --undecorated \
+  --skip-taskbar \
+  --close-on-unfocus \
+  --width=320 \
+  --height=220 \
+  --center \
+  --show-weeks \
+  --no-buttons
+for_window [title="calendar-popup"] floating enable, move position center
+
+bindsym $mod+m exec alacritty --title="terminal-popup"
+for_window [title="terminal-popup"] floating enable, move position center
+
+
 include /etc/sway/config.d/*

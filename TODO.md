@@ -14,3 +14,4 @@
 - Customise file explorer
 - Set up trackpad support
 - Set up terminal scratchpads
+- integrate calcurse in your workflow

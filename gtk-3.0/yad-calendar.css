@@ -1,0 +1,33 @@
+window {
+  background-color: #282828;
+}
+
+calendar {
+  background-color: #282828;
+  border-color: #282828;
+  color: #bdae93;
+  font-family: "JetBrainsMono Nerd Font Propo";
+  font-size: 18px;
+}
+
+
+/* Month/year header */
+calendar.header {
+  color: #fabd2f;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom: 1px solid #3c3836;
+}
+
+/* Weekday labels (Mon, Tue, etc) */
+calendar.highlight {
+  color: #fabd2f
+}
+
+/* Today highlight */
+calendar:selected {
+  background-color: #d5c4a1;
+  color: #282828;
+  font-weight: bold;
+  border-radius: 4px;
+}
