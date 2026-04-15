@@ -4,6 +4,7 @@
 - Set up SSH to laptop so I can work from my pc but on my laptop
 - Make sure you can screen-share - if not, set it up
 
+- SET UP SECURITY ON ARCH.
 - SET UP BLUETOOTH + Bluetooth icon in waybar (just indicator)
 - Set up screenshotting properly - flameshot gui just won't work in sway's config
 - SET UP USB detection
