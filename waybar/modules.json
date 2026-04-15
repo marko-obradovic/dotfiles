@@ -144,7 +144,7 @@
     // "scroll-step": 5,
     "format": "{icon} {volume: >3}%",
     "format-bluetooth": "{icon} {volume: >3}%",
-    "format-muted": " muted",
+    "format-muted": "  muted",
     "format-icons": {
       "headphones": "",
       "handsfree": "",
