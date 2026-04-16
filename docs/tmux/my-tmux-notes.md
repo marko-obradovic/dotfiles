@@ -9,3 +9,6 @@ Rename ession in commandline:
 4. `cd`
 5. `tmux new-session -A -s general`
 6. prefix+s to switch between `dev` an `general`
+
+I automated this process in `load-tmux-env.sh`
+It's based on this: https://tmuxai.dev/tmux-startup-script/
