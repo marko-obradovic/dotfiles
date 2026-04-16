@@ -44,6 +44,14 @@ General
 - tree
 - fuzzel
 - swaylock
+- yad (calendar)
+- ly (lockscreen)
+    - Follow instructions: https://wiki.archlinux.org/title/Ly
+    - Enable ly@ttyX.service
+    - Disable getty@ttyX.service
+    - X is the number that appears when you type `systemctl | grep getty` and you find a match.
+- hyprpicker
+- wl-clipboard (so that `hyprpicker -a` can copy to the clipboard)
 
 Bluetooth:
 https://wiki.archlinux.org/title/Bluetooth

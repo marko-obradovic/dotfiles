@@ -301,5 +301,9 @@ for_window [title="calendar-popup"] floating enable, move position center
 bindsym $mod+m exec alacritty --title="terminal-popup"
 for_window [title="terminal-popup"] floating enable, move position center
 
+bindsym $mod+Shift+p exec $term --title color-preview -e ~/.config/scripts/color-preview.sh
+for_window [title="color-preview"] floating enable, resize set 200 200, move position center
 
-include /etc/sway/config.d/*
+bindsym $mod+p exec hyprpicker -a
+
+include /etc/sway/coeyedroppernfig.d/*

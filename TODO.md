@@ -12,6 +12,7 @@
 - Customise file explorer
 - Set up trackpad support
 - integrate calcurse in your workflow
+- Set up TMUX script to create dev/general sessions, with a flag to pick the dev working dir, and automatically spawning dotfiles, software-engineering-notes, and any other windows I might need in the general session
 
 FOR PC:
 - Set a way to increase/decrease volume on pc 
