@@ -62,6 +62,7 @@ Make sure to enable and start bluetooth.service:
 `sudo systemctl enable bluetooth`
 `systemctl enable --now bluetooth.service`
 You can also use bluetui (need to install it via pacman)
+- Weird kink with this is that I need to turn scan on and off, see my device in the list, then connect. It won't remember the device. It worked on Mint, so it's worth looking into how to do this and update this.
 
 
 Neovim

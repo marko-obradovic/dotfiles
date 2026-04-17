@@ -5,7 +5,7 @@
 - Make sure you can screen-share - if not, set it up
 
 - SET UP SECURITY ON ARCH.
-- SET UP BLUETOOTH + Bluetooth icon in waybar (just indicator)
+- Fix bluetooth not being able to connect without scanning again
 - Set up screenshotting properly - flameshot gui just won't work in sway's config
 - SET UP USB detection
 - Fix screentear - get compositor?
