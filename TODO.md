@@ -15,6 +15,7 @@
 - Set up TMUX script to create dev/general sessions, with a flag to pick the dev working dir, and automatically spawning dotfiles, software-engineering-notes, and any other windows I might need in the general session
 - customise ly login
 - customise GRUB Bootloader
+- Set up indicator that I'm resizing - sometimes I can't use any buttons in sway because it's meant to be resizing
 
 FOR PC:
 - Set a way to increase/decrease volume on pc 
