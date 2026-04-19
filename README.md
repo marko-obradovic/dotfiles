@@ -13,6 +13,19 @@ Typical workflow:
 `nmcli device wifi connect BSSID` (if no password)
 `nmcli device wifi connect BSSID --ask` (if password)
 
+If you're disconnected, just run `NetworkManager`.
+More specifically, if your wifi looks like this after running `nmcli`:
+
+```bash
+p2p-dev-wlp3s0: unavailable
+```
+
+Running `NetworkManager` starts up the service an gets it to this when you run `nmcli` again after:
+
+```bash
+wlp3s0: connected to VM2003653
+```
+
 # My Packages
 General
 - qalculate-qt
