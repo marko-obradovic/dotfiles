@@ -15,6 +15,7 @@ Typical workflow:
 
 # My Packages
 General
+- qalculate-qt
 - Any nerd font
 - tmux
 - stow
