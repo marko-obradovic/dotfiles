@@ -76,7 +76,34 @@ Make sure to enable and start bluetooth.service:
 `sudo systemctl enable bluetooth`
 `systemctl enable --now bluetooth.service`
 You can also use bluetui (need to install it via pacman)
-- Weird kink with this is that I need to turn scan on and off, see my device in the list, then connect. It won't remember the device. It worked on Mint, so it's worth looking into how to do this and update this.
+> Weird kink with this is that I need to turn scan on and off, see my device in the list, then connect. It won't remember the device. It worked on Mint, so it's worth looking into how to do this and update this.
+> If you have this issue:
+```bash
+[bluetoothctl]> scan on
+SetDiscoveryFilter failed: org.bluez.Error.NotReady
+Failed to start discovery: org.bluez.Error.NotReady
+```
+
+try:
+```bash
+:::  rfkill list
+0: ideapad_wlan: Wireless LAN
+	Soft blocked: no
+	Hard blocked: no
+1: ideapad_bluetooth: Bluetooth
+	Soft blocked: yes
+	Hard blocked: no
+3: phy0: Wireless LAN
+	Soft blocked: no
+	Hard blocked: no
+38: hci0: Bluetooth
+	Soft blocked: yes
+	Hard blocked: no
+```
+
+The problem is probably this above ^
+
+Just do `rfkill unblock all`
 
 
 Neovim
