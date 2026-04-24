@@ -28,7 +28,8 @@ wlp3s0: connected to VM2003653
 
 # My Packages
 General
-- qalculate-qt
+- anki (can install via pacman)
+- qalculate-qt (can install via pacman)
 - Any nerd font
 - tmux
 - stow
