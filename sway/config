@@ -268,7 +268,7 @@ client.urgent           $fg_cream       $bg_charcoal  $accent_red $accent_olive 
 client.placeholder      $bg_mid         $bg_charcoal  $fg_ivory   $bg_muted       $fg_sand
 client.background       $bg_charcoal
 
-seat * hide_cursor 300
+seat * hide_cursor 2000
 
 # Dismiss latest notification
 bindsym $mod+Ctrl+x exec makoctl dismiss

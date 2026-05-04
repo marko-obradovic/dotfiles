@@ -28,6 +28,7 @@ wlp3s0: connected to VM2003653
 
 # My Packages
 General
+- xournalpp (pacman)
 - calibre (pacman)
 - anki (can install via pacman)
 - qalculate-qt (can install via pacman)
