@@ -1,5 +1,5 @@
 # TODO
-- Fix automatic multiple monitor detection and setup
+- Fix the jagged edge on the settings module on the waybar when on a PC 
 - Create a go-to modular, reproducable and portable development environment
 - Set up SSH to laptop so I can work from my pc but on my laptop
 - Make sure you can screen-share - if not, set it up
