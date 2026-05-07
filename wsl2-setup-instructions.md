@@ -2,7 +2,7 @@ Make sure you have a different branch for this setup.
 
 1. Install sway
 2. Install xwayland
-3. Install https://github.com/jordankoehn/sway-wsl2 (follow the instructions on the page) - OR I think you can run sway without this by running `sway --unsupported-gpu`
+3. Run `sway` - if it doesn't work, run `sway --unsupported-gpu`
 4. Make sure `systemctl is-system-running` returns `running`
     - If not, go into `/etc/wsl.conf`, and include the following:
     ```conf
@@ -10,3 +10,4 @@ Make sure you have a different branch for this setup.
     systemd=true
     ```
 5. Make sure your $mod key is mod1 (alt) - win key doesn't work.
+6. Sway will be a floating window by default, with no way to click to maximise, minimise, or move it around - press win key + up to fullscreen it - then win key + down to reduce it.
