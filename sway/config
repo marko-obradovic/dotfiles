@@ -262,7 +262,7 @@ set $accent_gray        #a89984
 ## Window Colours
 
 client.focused          $accent_purple  $bg_charcoal  $fg_ivory   $fg_cream    $accent_gray
-client.focused_inactive $bg_mid         $bg_charcoal  $fg_ivory   $accent_red    $bg_mid
+client.focused_inactive $bg_mid         $bg_charcoal  $fg_ivory   $bg_muted    $bg_mid
 client.unfocused        $bg_dark        $bg_charcoal  $fg_ivory   $accent_red    $bg_mid
 client.urgent           $fg_cream       $bg_charcoal  $accent_red $accent_olive  $bg_mid
 client.placeholder      $bg_mid         $bg_charcoal  $fg_ivory   $bg_muted       $fg_sand
