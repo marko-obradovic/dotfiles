@@ -1,1 +1,1 @@
-bluetoothctl connect B0:F0:0C:0B:2B:2F
+bluetoothctl connect 88:0E:85:3D:D8:72
