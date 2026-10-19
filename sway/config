@@ -307,3 +307,7 @@ for_window [title="color-preview"] floating enable, resize set 200 200, move pos
 bindsym $mod+p exec hyprpicker -a
 
 include /etc/sway/coeyedroppernfig.d/*
+
+input "10429:2347:UGTABLET_13.3_inch_PenDisplay" {
+    map_to_output HDMI-A-1
+}
