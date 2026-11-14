@@ -8,9 +8,9 @@ opt.wrap = true -- wrap long lines
 opt.signcolumn = "yes" -- always show sign column
 
 -- Tabs & indentation
-opt.tabstop = 2 -- width of a tab character
-opt.softtabstop = 2 -- spaces inserted when pressing Tab
-opt.shiftwidth = 2 -- spaces for autoindent and >>/<<
+opt.tabstop = 4 -- width of a tab character
+opt.softtabstop = 4 -- spaces inserted when pressing Tab
+opt.shiftwidth = 4 -- spaces for autoindent and >>/<<
 opt.expandtab = true -- convert tabs to spaces
 opt.autoindent = true -- copy indent from previous line
 
