@@ -28,6 +28,7 @@ wlp3s0: connected to VM2003653
 
 # My Packages
 General
+- btop
 - speedtest-cli (pacman)
 - xournalpp (pacman)
 - calibre (pacman)
