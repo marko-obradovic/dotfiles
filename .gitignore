@@ -1,1 +1,2 @@
 systemd/user/timers.target.wants/
+tmux/plugins
